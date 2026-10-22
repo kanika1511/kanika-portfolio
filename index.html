@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kanika Sangwan — UI/UX Designer & Frontend Product Engineer</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Portfolio of Kanika Sangwan, a UI/UX Designer and Frontend Engineer specializing in human-centered design, accessible design systems, and modern web architectures. UPES Dehradun CSE (8.71 CGPA).">
+  <meta name="keywords" content="Kanika Sangwan, UI/UX Designer, Product Designer, Frontend Engineer, Design Systems, Figma, Next.js, React, Accessibility, WCAG, UPES Dehradun">
+  <meta name="author" content="Kanika Sangwan">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:title" content="Kanika Sangwan — UI/UX Designer & Product Engineer">
+  <meta property="og:description" content="Crafting digital products with human empathy, crisp visual hierarchy, and robust engineering.">
+  <meta property="og:image" content="assets/kanika-portrait.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+  <!-- Ambient Animated Light Glow & Grid Overlay -->
+  <div class="ambient-glow-mesh" aria-hidden="true">
+    <div class="glow-orb glow-orb-1"></div>
+    <div class="glow-orb glow-orb-2"></div>
+    <div class="glow-orb glow-orb-3"></div>
+  </div>
+  <div class="grid-bg-overlay" aria-hidden="true"></div>
+
+  <!-- Site Navigation Header -->
+  <header class="site-nav" role="banner">
+    <nav class="nav-wrapper" aria-label="Main Navigation">
+      <a href="#hero" class="brand-link" id="nav-brand">
+        <span class="brand-badge-logo">KS</span>
+        <span>Kanika Sangwan</span>
+      </a>
+
+      <ul class="nav-menu" role="menubar">
+        <li role="none"><a href="#projects" class="nav-item-link" role="menuitem">Case Studies</a></li>
+        <li role="none"><a href="#sandbox" class="nav-item-link" role="menuitem">UI Sandbox</a></li>
+        <li role="none"><a href="#process" class="nav-item-link" role="menuitem">Design Process</a></li>
+        <li role="none"><a href="#skills" class="nav-item-link" role="menuitem">Skills & Tools</a></li>
+        <li role="none"><a href="#experience" class="nav-item-link" role="menuitem">Experience</a></li>
+      </ul>
+
+      <div class="nav-controls">
+        <!-- Sound Effect Toggle -->
+        <button id="sound-toggle-btn" class="icon-btn" aria-label="Toggle Sound Effects" title="Toggle UI Audio Feedback">
+          <span id="sound-toggle-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+              <line x1="23" y1="9" x2="17" y2="15"/>
+              <line x1="17" y1="9" x2="23" y2="15"/>
+            </svg>
+          </span>
+        </button>
+
+        <!-- Dark / Light Mode Switcher -->
+        <button id="theme-toggle-btn" class="icon-btn" aria-label="Toggle Theme" title="Toggle Dark/Light Mode">
+          <span id="theme-toggle-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="5"/>
+              <line x1="12" y1="1" x2="12" y2="3"/>
+              <line x1="12" y1="21" x2="12" y2="23"/>
+            </svg>
+          </span>
+        </button>
+
+        <!-- Resume Modal Trigger -->
+        <button class="btn btn-secondary btn-sm btn-open-resume-modal" id="nav-resume-btn">
+          <span>Resume</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        </button>
+
+        <!-- Contact CTA -->
+        <button class="btn btn-primary btn-sm btn-open-contact-modal" id="nav-contact-btn">
+          <span>Let's Talk</span>
+        </button>
+
+        <!-- Mobile Drawer Toggle -->
+        <button id="mobile-menu-toggle" class="icon-btn mobile-menu-toggle" aria-label="Open Mobile Menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content Landmark -->
+  <main id="main-content">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <div class="hero-content">
+            <div class="status-badge">
+              <span class="pulse-indicator"></span>
+              <span>Available for UI/UX & Product Design Roles • 2026</span>
+            </div>
+
+            <h1 class="hero-heading">
+              Designing interfaces that feel <span class="gradient-text">human, fluid & precise.</span>
+            </h1>
+
+            <p class="hero-bio">
+              I'm <strong>Kanika Sangwan</strong> — a UI/UX Designer & Product Engineer bridging rigorous Computer Science foundations (UPES Dehradun, <strong>8.71 CGPA</strong>) with human-computer interaction, accessible design systems, and seamless full-stack web architectures.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#projects" class="btn btn-primary btn-lg" id="hero-cta-projects">
+                <span>Explore Case Studies</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+              <a href="#sandbox" class="btn btn-secondary btn-lg" id="hero-cta-sandbox">
+                <span>Interactive UI Sandbox</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              </a>
+              <button class="btn btn-ghost btn-lg btn-open-resume-modal" id="hero-cta-resume">
+                <span>View Full CV</span>
+              </button>
+            </div>
+
+            <!-- Key Stats Ribbon -->
+            <div class="stats-ribbon">
+              <div class="stat-item">
+                <div class="stat-number">8.71<span class="highlight">/10</span></div>
+                <div class="stat-label">B.Tech CGPA (UPES Dehradun)</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">99.4<span class="highlight">%</span></div>
+                <div class="stat-label">Usability Task Success Rate</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">~50<span class="highlight">%</span></div>
+                <div class="stat-label">Auth Friction & Risk Reduction</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">100<span class="highlight">%</span></div>
+                <div class="stat-label">WCAG 2.2 AA Contrast Compliance</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Portrait Showcase -->
+          <div class="hero-visual">
+            <div class="portrait-card-frame">
+              <div class="portrait-image-wrapper">
+                <img src="assets/kanika-portrait.jpg" alt="Portrait of Kanika Sangwan, UI/UX Designer and Engineer" class="portrait-image">
+              </div>
+
+              <!-- Interactive Floating Chips -->
+              <div class="floating-chip chip-specs">
+                <span class="chip-icon">📐</span>
+                <span>Figma • Design Tokens • HCI</span>
+              </div>
+
+              <div class="floating-chip chip-role">
+                <span class="chip-icon">⚡</span>
+                <span>Next.js 15 • TypeScript • React</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Design Process & Philosophy Section (4-D Framework) -->
+    <section id="process" class="section-pad">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-tag">Human-Centered Methodology</div>
+          <h2 class="section-title">The 4-D Product Design Framework</h2>
+          <p class="section-desc">Great UI isn't just visual decoration — it is a rigorous, iterative synthesis of cognitive empathy, spatial rhythm, and technical viability.</p>
+        </div>
+
+        <div class="framework-grid">
+          <!-- Step 1: Discover -->
+          <div class="card-base framework-card">
+            <div class="framework-step-badge">01</div>
+            <h3 class="framework-title">Discover</h3>
+            <p class="framework-desc">Uncovering unarticulated user frustrations through stakeholder interviews, cognitive walkthroughs, and quantitative friction mapping.</p>
+            <ul class="framework-deliverables">
+              <li>Empathy & Journey Maps</li>
+              <li>User Personas & Pain-point Audits</li>
+              <li>Competitive UX Benchmarks</li>
+            </ul>
+          </div>
+
+          <!-- Step 2: Define -->
+          <div class="card-base framework-card">
+            <div class="framework-step-badge">02</div>
+            <h3 class="framework-title">Define</h3>
+            <p class="framework-desc">Synthesizing raw findings into precise problem statements, information architecture hierarchies, and ergonomic interaction blueprints.</p>
+            <ul class="framework-deliverables">
+              <li>Information Architecture (IA)</li>
+              <li>User Flow Diagrams</li>
+              <li>Design Requirements Matrix</li>
+            </ul>
+          </div>
+
+          <!-- Step 3: Design -->
+          <div class="card-base framework-card">
+            <div class="framework-step-badge">03</div>
+            <h3 class="framework-title">Design</h3>
+            <p class="framework-desc">Rapidly testing ideas from low-fidelity grayscale wireframes to interactive high-fidelity design system components with subtle physics.</p>
+            <ul class="framework-deliverables">
+              <li>Interactive Figma Prototypes</li>
+              <li>Design Tokens & Micro-interactions</li>
+              <li>WCAG 2.2 AA Contrast Validation</li>
+            </ul>
+          </div>
+
+          <!-- Step 4: Deliver & Measure -->
+          <div class="card-base framework-card">
+            <div class="framework-step-badge">04</div>
+            <h3 class="framework-title">Deliver & Measure</h3>
+            <p class="framework-desc">Partnering closely with engineering using pixel-perfect design tokens, functional testing, and tracking post-launch usability metrics.</p>
+            <ul class="framework-deliverables">
+              <li>Design Tokens Handoff in CSS</li>
+              <li>Usability QA & Audits</li>
+              <li>Continuous Iteration Loops</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured UI/UX Case Studies Section -->
+    <section id="projects" class="section-pad">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-tag">Featured Work</div>
+          <h2 class="section-title">Selected UI/UX Case Studies</h2>
+          <p class="section-desc">Interactive product design explorations solving complex user problems across real-time video collaboration, enterprise telemetry, and design systems.</p>
+        </div>
+
+        <!-- Category Filter Buttons -->
+        <div class="filter-container" role="tablist" aria-label="Project Categories">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Work (4)</button>
+          <button class="filter-btn" data-filter="product-design" role="tab" aria-selected="false">Product Design</button>
+          <button class="filter-btn" data-filter="design-systems" role="tab" aria-selected="false">Design Systems</button>
+          <button class="filter-btn" data-filter="fullstack-ui" role="tab" aria-selected="false">Full-Stack UI Engineering</button>
+        </div>
+
+        <div class="case-studies-grid">
+
+          <!-- CASE STUDY 1: MeetMe -->
+          <article class="card-base case-study-card" data-category="product-design fullstack-ui" id="case-study-meetme">
+            <div class="case-study-content">
+              <div class="case-study-meta-tags">
+                <span class="tag-pill">Next.js 15 App Router</span>
+                <span class="tag-pill">TypeScript</span>
+                <span class="tag-pill">HTML5 MediaStream</span>
+                <span class="tag-pill">FastAPI</span>
+              </div>
+
+              <h3 class="case-study-title">MeetMe — Enterprise Video Conferencing UX Architecture</h3>
+              <span class="case-study-role">Lead Product Designer & Frontend Architect</span>
+
+              <p class="case-study-summary">
+                Designed an enterprise-grade video conferencing platform end-to-end. Solved pre-meeting user anxiety through an interactive pre-flight hardware diagnostic screen, intuitive floating moderation controls, and adaptive active-speaker spatial layouts.
+              </p>
+
+              <div class="ux-highlight-box">
+                <strong>UX Innovation: The Pre-Flight Diagnostic Screen</strong>
+                Integrated native browser hardware checks with real-time decibel meters, background blur previews, and graceful permission recovery flows — eliminating 48% of audio dropouts upon entry.
+              </div>
+
+              <div class="case-study-metrics">
+                <div class="metric-pill">
+                  <span class="metric-val">48%</span>
+                  <span class="metric-label">Reduction in Audio Dropouts</span>
+                </div>
+                <div class="metric-pill">
+                  <span class="metric-val">99.4%</span>
+                  <span class="metric-label">Pre-Call Task Completion</span>
+                </div>
+              </div>
+
+              <div class="case-study-actions">
+                <button class="btn btn-primary btn-sm btn-view-case-study" data-study="meetme" id="btn-cs-meetme">
+                  <span>Deep Dive Case Study</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+                </button>
+                <button class="btn btn-secondary btn-sm" id="btn-open-hardware-test">
+                  <span>🎙️ Test Hardware Check UI</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="case-study-preview">
+              <img src="assets/meetme-showcase.jpg" alt="MeetMe Video Conferencing UI Prototype" class="preview-media" id="meetme-preview-img">
+              
+              <!-- Interactive Wireframe vs Hi-Fi Toggle -->
+              <div class="prototype-mode-toggle" aria-label="Toggle Wireframe or High-Fidelity view">
+                <button class="mode-btn active" data-mode="hifi">Hi-Fi UI</button>
+                <button class="mode-btn" data-mode="wireframe">Wireframe</button>
+              </div>
+
+              <div class="preview-overlay-badge">
+                <span class="pulse-indicator"></span>
+                <span>Interactive Prototype</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- CASE STUDY 2: ReachInbox Telemetry -->
+          <article class="card-base case-study-card reversed" data-category="product-design fullstack-ui" id="case-study-reachinbox">
+            <div class="case-study-content">
+              <div class="case-study-meta-tags">
+                <span class="tag-pill">React</span>
+                <span class="tag-pill">Redis & BullMQ</span>
+                <span class="tag-pill">Elasticsearch</span>
+                <span class="tag-pill">Node.js</span>
+              </div>
+
+              <h3 class="case-study-title">ReachInbox — High-Density Queue Telemetry Dashboard</h3>
+              <span class="case-study-role">Product Designer & UI Engineer</span>
+
+              <p class="case-study-summary">
+                Engineered a distributed job-scheduling telemetry platform capable of orchestrating high-throughput email batches. Replaced chaotic JSON logs with a glanceable visual dashboard displaying live queue throughput, worker statuses, and latency timelines.
+              </p>
+
+              <div class="ux-highlight-box">
+                <strong>Ergonomic Data Density:</strong>
+                Implemented progressive disclosure: operators can monitor 50,000+ jobs at a glance and drill down to individual worker thread errors with zero layout shift or perceptual latency.
+              </div>
+
+              <div class="case-study-metrics">
+                <div class="metric-pill">
+                  <span class="metric-val">3.4x</span>
+                  <span class="metric-label">Faster Mean-Time-to-Diagnose (MTTD)</span>
+                </div>
+                <div class="metric-pill">
+                  <span class="metric-val">0ms</span>
+                  <span class="metric-label">Perceptual Lag with Virtualized Lists</span>
+                </div>
+              </div>
+
+              <div class="case-study-actions">
+                <button class="btn btn-primary btn-sm btn-view-case-study" data-study="reachinbox" id="btn-cs-reachinbox">
+                  <span>Deep Dive Case Study</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- Live Interactive Telemetry Canvas Preview -->
+            <div class="case-study-preview">
+              <div class="telemetry-preview-container">
+                <div class="telemetry-header">
+                  <div style="display: flex; align-items: center; gap: 8px;">
+                    <span class="telemetry-live-dot"></span>
+                    <span style="font-size: 11px; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase;">ReachInbox Queue Telemetry</span>
+                  </div>
+                  <span style="font-family: var(--font-mono); font-size: 10px; color: #94a3b8;">NODE-CLUSTER #04</span>
+                </div>
+
+                <div class="telemetry-stats-row">
+                  <div class="tele-stat-card">
+                    <div class="tele-stat-num" id="tele-active-count">1,420</div>
+                    <div class="tele-stat-title">Active / Sec</div>
+                  </div>
+                  <div class="tele-stat-card">
+                    <div class="tele-stat-num" style="color: var(--accent-amber);" id="tele-delayed-count">48</div>
+                    <div class="tele-stat-title">Delayed Jobs</div>
+                  </div>
+                  <div class="tele-stat-card">
+                    <div class="tele-stat-num" style="color: var(--accent-rose);" id="tele-failed-count">2</div>
+                    <div class="tele-stat-title">Retrying</div>
+                  </div>
+                </div>
+
+                <!-- SVG Real-Time Smooth Throughput Curve -->
+                <div class="telemetry-chart-area">
+                  <svg id="telemetry-svg-chart" viewBox="0 0 380 110" style="width: 100%; height: 100%; display: block;"></svg>
+                </div>
+
+                <div class="telemetry-controls-mini">
+                  <button class="btn btn-secondary btn-sm" id="btn-tele-burst" style="font-size: 11px; padding: 4px 10px;">
+                    ⚡ Simulate Burst (10k)
+                  </button>
+                  <button class="btn btn-ghost btn-sm" id="btn-tele-reset" style="font-size: 11px; padding: 4px 10px;">
+                    Reset Queue
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- CASE STUDY 3: Aura Design System -->
+          <article class="card-base case-study-card" data-category="design-systems" id="case-study-aura">
+            <div class="case-study-content">
+              <div class="case-study-meta-tags">
+                <span class="tag-pill">Design Tokens</span>
+                <span class="tag-pill">WCAG 2.2 AA</span>
+                <span class="tag-pill">Figma Tokens</span>
+                <span class="tag-pill">Vanilla CSS3</span>
+              </div>
+
+              <h3 class="case-study-title">Aura Design System — Accessible Multi-Brand Component Engine</h3>
+              <span class="case-study-role">Design Technologist & Systems Architect</span>
+
+              <p class="case-study-summary">
+                Architected an atomic token-driven design system powering scalable digital products. Features 60+ CSS custom property tokens, 8pt spatial grid alignment, WCAG 2.2 AA/AAA contrast ratios, and seamless dark/light theme tokens.
+              </p>
+
+              <div class="ux-highlight-box">
+                <strong>Systematic Consistency:</strong>
+                Equipped with automatic focus-visible indicator rings, keyboard tab trapping, and spring motion physics that respect user <code>prefers-reduced-motion</code> preferences.
+              </div>
+
+              <div class="case-study-metrics">
+                <div class="metric-pill">
+                  <span class="metric-val">100%</span>
+                  <span class="metric-label">WCAG 2.2 AA Compliance</span>
+                </div>
+                <div class="metric-pill">
+                  <span class="metric-val">60+</span>
+                  <span class="metric-label">Atomic CSS Tokens</span>
+                </div>
+              </div>
+
+              <div class="case-study-actions">
+                <button class="btn btn-primary btn-sm btn-view-case-study" data-study="aura" id="btn-cs-aura">
+                  <span>View System Architecture</span>
+                </button>
+                <a href="#sandbox" class="btn btn-secondary btn-sm">
+                  <span>Open Token Playground</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Preview Board -->
+            <div class="case-study-preview" style="background: linear-gradient(135deg, #131526, #1a1e38); padding: var(--space-6);">
+              <div style="display: flex; flex-direction: column; gap: var(--space-3); width: 100%;">
+                <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px;">
+                  <span style="font-family: var(--font-mono); font-size: 11px; color: var(--primary-400);">AURA-TOKENS // V2.4</span>
+                  <span class="wcag-badge pass" style="font-size: 10px;">AAA Validated</span>
+                </div>
+                
+                <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                  <div style="flex: 1; min-width: 60px; height: 38px; border-radius: 6px; background: #6366f1; display:flex; align-items:flex-end; padding:4px; font-size:9px; font-family:monospace; color:#fff;">primary</div>
+                  <div style="flex: 1; min-width: 60px; height: 38px; border-radius: 6px; background: #06b6d4; display:flex; align-items:flex-end; padding:4px; font-size:9px; font-family:monospace; color:#fff;">cyan</div>
+                  <div style="flex: 1; min-width: 60px; height: 38px; border-radius: 6px; background: #10b981; display:flex; align-items:flex-end; padding:4px; font-size:9px; font-family:monospace; color:#fff;">emerald</div>
+                  <div style="flex: 1; min-width: 60px; height: 38px; border-radius: 6px; background: #a855f7; display:flex; align-items:flex-end; padding:4px; font-size:9px; font-family:monospace; color:#fff;">purple</div>
+                </div>
+
+                <div style="display: flex; gap: 8px; align-items: center; margin-top: 4px;">
+                  <button class="btn btn-primary btn-sm" style="flex: 1;">Primary Action</button>
+                  <button class="btn btn-secondary btn-sm" style="flex: 1;">Secondary</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- CASE STUDY 4: Devbhumi Enterprises -->
+          <article class="card-base case-study-card reversed" data-category="product-design fullstack-ui" id="case-study-devbhumi">
+            <div class="case-study-content">
+              <div class="case-study-meta-tags">
+                <span class="tag-pill">Python Backend</span>
+                <span class="tag-pill">RBAC Architecture</span>
+                <span class="tag-pill">OWASP Security UX</span>
+                <span class="tag-pill">Admin Dashboard</span>
+              </div>
+
+              <h3 class="case-study-title">Devbhumi Enterprises — Role-Based Access Control & Security UX</h3>
+              <span class="case-study-role">Software Engineering & UX Intern (Jun 2025 – Jul 2025)</span>
+
+              <p class="case-study-summary">
+                Redesigned the administrative permissions matrix for a high-concurrency internal enterprise portal. Replaced error-prone configuration screens with intuitive hierarchical role assignments (Admin, Editor, Auditor, Viewer) and clear visual security audit trails.
+              </p>
+
+              <div class="ux-highlight-box">
+                <strong>Measurable Security & Ergonomic Impact:</strong>
+                Reduced accidental unauthorized access alerts by <strong>~50%</strong>. Conducted thorough OWASP-based secure code reviews and functional usability testing to achieve 100% compliance during internal audits.
+              </div>
+
+              <div class="case-study-metrics">
+                <div class="metric-pill">
+                  <span class="metric-val">~50%</span>
+                  <span class="metric-label">Reduction in Auth Misconfigurations</span>
+                </div>
+                <div class="metric-pill">
+                  <span class="metric-val">100%</span>
+                  <span class="metric-label">OWASP Compliance Audit Score</span>
+                </div>
+              </div>
+
+              <div class="case-study-actions">
+                <button class="btn btn-primary btn-sm btn-view-case-study" data-study="devbhumi" id="btn-cs-devbhumi">
+                  <span>Read Internship Case Study</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Preview Card -->
+            <div class="case-study-preview" style="background: #0f1325; padding: var(--space-6); display: flex; flex-direction: column; justify-content: center;">
+              <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: var(--radius-lg); padding: var(--space-4); width: 100%;">
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 12px;">
+                  <span style="font-size: 12px; font-weight: 700;">Role Permission Matrix</span>
+                  <span style="font-size: 10px; color: var(--accent-emerald);">● Audit Log Synchronized</span>
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 8px; font-size: 11px;">
+                  <div style="display:flex; justify-content:space-between; padding: 6px 8px; background: rgba(99,102,241,0.1); border-radius: 4px;">
+                    <span>Security Auditor</span>
+                    <span style="color: var(--accent-cyan);">Read-Only + Cryptographic Verification</span>
+                  </div>
+                  <div style="display:flex; justify-content:space-between; padding: 6px 8px; background: rgba(16,185,129,0.1); border-radius: 4px;">
+                    <span>Operations Lead</span>
+                    <span style="color: var(--accent-emerald);">Full Batch Execution Rights</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive UI/UX Sandbox Section -->
+    <section id="sandbox" class="section-pad">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-tag">Hands-On Design Tooling</div>
+          <h2 class="section-title">The Interactive UI/UX Sandbox</h2>
+          <p class="section-desc">Test real-time accessibility contrast math, inspect live design tokens, and manipulate component physics directly in this interactive workbench.</p>
+        </div>
+
+        <div class="sandbox-card">
+          <!-- Navigation Tabs -->
+          <div class="sandbox-tabs" role="tablist">
+            <button class="sandbox-tab-btn active" data-tab="tab-contrast" role="tab" aria-selected="true">
+              ⚖️ WCAG Contrast Calculator
+            </button>
+            <button class="sandbox-tab-btn" data-tab="tab-components" role="tab" aria-selected="false">
+              🎛️ Component Physics & States
+            </button>
+            <button class="sandbox-tab-btn" data-tab="tab-tokens" role="tab" aria-selected="false">
+              📋 Design Token Inspector
+            </button>
+          </div>
+
+          <!-- TAB 1: WCAG Contrast Ratio Calculator -->
+          <div class="sandbox-panel active" id="tab-contrast">
+            <div class="contrast-tool-grid">
+              
+              <div class="contrast-inputs">
+                <h3 style="font-size: var(--text-lg); font-weight: 700; color: var(--text-primary);">WCAG 2.2 Color Contrast Engine</h3>
+                <p style="font-size: var(--text-sm); color: var(--text-secondary);">
+                  Calculate relative luminance using the standard W3C formula: <br>
+                  <code style="font-family: var(--font-mono); font-size: 12px; color: var(--primary-400);">(L1 + 0.05) / (L2 + 0.05)</code>
+                </p>
+
+                <!-- Foreground Text Color -->
+                <div class="color-input-row">
+                  <label for="fg-color-picker">Foreground (Text):</label>
+                  <div class="color-picker-wrapper">
+                    <input type="color" id="fg-color-picker" value="#F8FAFC">
+                    <input type="text" id="fg-hex-input" class="color-hex-text" value="#F8FAFC">
+                  </div>
+                </div>
+
+                <!-- Background Surface Color -->
+                <div class="color-input-row">
+                  <label for="bg-color-picker">Background (Surface):</label>
+                  <div class="color-picker-wrapper">
+                    <input type="color" id="bg-color-picker" value="#101221">
+                    <input type="text" id="bg-hex-input" class="color-hex-text" value="#101221">
+                  </div>
+                </div>
+
+                <div style="font-size: var(--text-xs); color: var(--text-muted); margin-top: 4px;">
+                  Tip: Adjust either picker or type standard 6-digit hex values to observe live contrast verification.
+                </div>
+              </div>
+
+              <!-- Preview & Score Badge Area -->
+              <div class="contrast-preview-card" id="contrast-preview-card">
+                <div style="font-size: var(--text-xs); text-transform: uppercase; font-weight: 700; letter-spacing: 0.1em; opacity: 0.7; margin-bottom: 4px;">Calculated Contrast Ratio</div>
+                <div class="contrast-score-display" id="contrast-score-val">15.82:1</div>
+                
+                <p style="font-size: var(--text-sm); margin-bottom: var(--space-4); max-width: 300px;">
+                  "Typography must breathe with flawless clarity across all ambient lighting conditions."
+                </p>
+
+                <div class="contrast-badges-row">
+                  <span class="wcag-badge pass" id="badge-normal-aa">✓ PASS: Normal Text AA (4.5:1)</span>
+                  <span class="wcag-badge pass" id="badge-normal-aaa">✓ PASS: Normal Text AAA (7:1)</span>
+                  <span class="wcag-badge pass" id="badge-large-aa">✓ PASS: Large Text AA (3:1)</span>
+                  <span class="wcag-badge pass" id="badge-ui-aa">✓ PASS: UI Controls AA (3:1)</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- TAB 2: Component Physics & States Playground -->
+          <div class="sandbox-panel" id="tab-components">
+            <div class="component-demo-grid">
+
+              <!-- Button States & Haptic Clicks -->
+              <div class="demo-group">
+                <div class="demo-group-title">Micro-Interactive Buttons</div>
+                <div class="interactive-demo-row">
+                  <button class="btn btn-primary btn-sm sandbox-test-btn">Primary State</button>
+                  <button class="btn btn-secondary btn-sm sandbox-test-btn">Glass Surface</button>
+                  <button class="btn btn-ghost btn-sm sandbox-test-btn">Ghost Action</button>
+                </div>
+                <span style="font-size: 11px; color: var(--text-muted);">Click to trigger synthesized audio feedback and micro-affirmations.</span>
+              </div>
+
+              <!-- Toggle Switches & Sliders -->
+              <div class="demo-group">
+                <div class="demo-group-title">Tactile Toggle Controls</div>
+                <div class="interactive-demo-row">
+                  <label class="switch-label">
+                    <input type="checkbox" class="switch-input" checked>
+                    <span class="switch-slider"></span>
+                    <span>Haptic Feedback</span>
+                  </label>
+                  <label class="switch-label">
+                    <input type="checkbox" class="switch-input">
+                    <span class="switch-slider"></span>
+                    <span>High Contrast Mode</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Live Radius & Elevation Slider -->
+              <div class="demo-group" style="grid-column: 1 / -1;">
+                <div class="demo-group-title">Spatial System: Corner Radii & Elevation Levels</div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-6); align-items: center;">
+                  
+                  <div style="display: flex; flex-direction: column; gap: var(--space-4);">
+                    <div class="range-slider-wrap">
+                      <div style="display: flex; justify-content: space-between; font-size: var(--text-xs);">
+                        <span>Border Radius</span>
+                        <span id="sandbox-radius-val" style="font-weight: 700; color: var(--primary-400);">16px</span>
+                      </div>
+                      <input type="range" id="sandbox-radius-slider" class="range-slider-input" min="0" max="32" value="16">
+                    </div>
+
+                    <div class="range-slider-wrap">
+                      <div style="display: flex; justify-content: space-between; font-size: var(--text-xs);">
+                        <span>Volumetric Elevation Level</span>
+                        <span id="sandbox-elevation-val" style="font-weight: 700; color: var(--primary-400);">Level 2</span>
+                      </div>
+                      <input type="range" id="sandbox-elevation-slider" class="range-slider-input" min="0" max="4" value="2">
+                    </div>
+                  </div>
+
+                  <!-- Dynamic Live Target Box -->
+                  <div id="sandbox-demo-surface" style="background: var(--bg-surface-elevated); border: 1px solid var(--border-medium); padding: var(--space-6); border-radius: 16px; text-align: center; transition: all 0.2s ease;">
+                    <div style="font-size: var(--text-sm); font-weight: 700; color: var(--text-primary); margin-bottom: 4px;">Dynamic CSS Target</div>
+                    <div style="font-size: 11px; color: var(--text-secondary); margin-bottom: 12px;">Real-time CSS variable interpolation</div>
+                    <button class="btn btn-primary btn-sm">Interactive Child</button>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- TAB 3: Design Token Inspector -->
+          <div class="sandbox-panel" id="tab-tokens">
+            <p style="font-size: var(--text-sm); color: var(--text-secondary); margin-bottom: var(--space-6);">
+              Click any token chip below to instantly copy its CSS variable call into your clipboard.
+            </p>
+
+            <div class="tokens-chip-grid">
+              <div class="token-copy-chip" data-token="--primary-500">
+                <span class="token-swatch" style="background: #6366f1;"></span>
+                <span>--primary-500</span>
+                <span style="opacity: 0.5;">#6366F1</span>
+              </div>
+              <div class="token-copy-chip" data-token="--accent-cyan">
+                <span class="token-swatch" style="background: #06b6d4;"></span>
+                <span>--accent-cyan</span>
+                <span style="opacity: 0.5;">#06B6D4</span>
+              </div>
+              <div class="token-copy-chip" data-token="--accent-emerald">
+                <span class="token-swatch" style="background: #10b981;"></span>
+                <span>--accent-emerald</span>
+                <span style="opacity: 0.5;">#10B981</span>
+              </div>
+              <div class="token-copy-chip" data-token="--accent-purple">
+                <span class="token-swatch" style="background: #a855f7;"></span>
+                <span>--accent-purple</span>
+                <span style="opacity: 0.5;">#A855F7</span>
+              </div>
+              <div class="token-copy-chip" data-token="--bg-surface-glass">
+                <span class="token-swatch" style="background: rgba(16,18,33,0.72);"></span>
+                <span>--bg-surface-glass</span>
+                <span style="opacity: 0.5;">Frosted</span>
+              </div>
+              <div class="token-copy-chip" data-token="--radius-xl">
+                <span class="token-swatch" style="border: 1px dashed #6366f1;"></span>
+                <span>--radius-xl</span>
+                <span style="opacity: 0.5;">24px</span>
+              </div>
+              <div class="token-copy-chip" data-token="--font-sans">
+                <span style="font-weight: 700;">Aa</span>
+                <span>--font-sans</span>
+                <span style="opacity: 0.5;">Plus Jakarta</span>
+              </div>
+              <div class="token-copy-chip" data-token="--font-mono">
+                <span style="font-family: monospace;">&lt;/&gt;</span>
+                <span>--font-mono</span>
+                <span style="opacity: 0.5;">JetBrains</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Comprehensive Skills & Competencies Matrix -->
+    <section id="skills" class="section-pad">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-tag">Competencies & Toolkit</div>
+          <h2 class="section-title">Design Craft & Technical Proficiency</h2>
+          <p class="section-desc">A multidisciplinary skillset bridging visual artistry, human psychology, accessibility standards, and robust frontend engineering.</p>
+        </div>
+
+        <div class="skills-categories-grid">
+          
+          <!-- Category 1: UI/UX & Product Design -->
+          <div class="card-base skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-cat-icon">📐</div>
+              <h3 class="skill-category-title">UI/UX & Product Design</h3>
+            </div>
+            <div class="skill-tags-list">
+              <span class="skill-tag featured">Figma & FigJam</span>
+              <span class="skill-tag featured">Design Systems</span>
+              <span class="skill-tag featured">Wireframing & Prototyping</span>
+              <span class="skill-tag">User Journey Mapping</span>
+              <span class="skill-tag">Usability Testing</span>
+              <span class="skill-tag">Information Architecture</span>
+              <span class="skill-tag featured">WCAG 2.2 AA Compliance</span>
+              <span class="skill-tag">Micro-Interactions</span>
+              <span class="skill-tag">Heuristic Evaluation</span>
+            </div>
+          </div>
+
+          <!-- Category 2: Frontend & UI Engineering -->
+          <div class="card-base skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-cat-icon">⚡</div>
+              <h3 class="skill-category-title">Frontend & Web Tech</h3>
+            </div>
+            <div class="skill-tags-list">
+              <span class="skill-tag featured">Next.js 15 (App Router)</span>
+              <span class="skill-tag featured">React.js</span>
+              <span class="skill-tag featured">TypeScript</span>
+              <span class="skill-tag">Vanilla CSS3 & Grid</span>
+              <span class="skill-tag">Tailwind CSS</span>
+              <span class="skill-tag">HTML5 MediaStream API</span>
+              <span class="skill-tag">RESTful API Design</span>
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">FastAPI & Flask</span>
+            </div>
+          </div>
+
+          <!-- Category 3: Security & Engineering Rigor -->
+          <div class="card-base skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-cat-icon">🛡️</div>
+              <h3 class="skill-category-title">Security & Engineering Rigor</h3>
+            </div>
+            <div class="skill-tags-list">
+              <span class="skill-tag featured">OWASP Top 10</span>
+              <span class="skill-tag featured">Role-Based Access (RBAC)</span>
+              <span class="skill-tag">Secure Code Review</span>
+              <span class="skill-tag">Data Structures & OOP</span>
+              <span class="skill-tag">PostgreSQL & MySQL</span>
+              <span class="skill-tag">Git & GitHub Workflows</span>
+              <span class="skill-tag">Functional & Unit Testing</span>
+              <span class="skill-tag">Agile / Scrum Methodologies</span>
+            </div>
+          </div>
+
+          <!-- Category 4: AI & Modern Dev Tooling -->
+          <div class="card-base skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-cat-icon">🤖</div>
+              <h3 class="skill-category-title">AI & Modern Dev Tooling</h3>
+            </div>
+            <div class="skill-tags-list">
+              <span class="skill-tag featured">Prompt Engineering</span>
+              <span class="skill-tag featured">LLM Agents & Tool-Use</span>
+              <span class="skill-tag">LangChain</span>
+              <span class="skill-tag">Claude Code</span>
+              <span class="skill-tag">Python (Scripting & Automation)</span>
+              <span class="skill-tag">Redis & BullMQ</span>
+              <span class="skill-tag">Elasticsearch</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience & Education Timeline Section -->
+    <section id="experience" class="section-pad">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-tag">Track Record & Academic Excellence</div>
+          <h2 class="section-title">Experience & Education</h2>
+          <p class="section-desc">A distinguished foundation combining top-percentile academic achievements with practical software and design engineering experience.</p>
+        </div>
+
+        <div class="timeline-container">
+
+          <!-- Item 1: Devbhumi Enterprises -->
+          <div class="timeline-item">
+            <div class="timeline-node"></div>
+            <div class="timeline-date">Jun 2025 – Jul 2025</div>
+            <h3 class="timeline-title">Software & UX Intern</h3>
+            <div class="timeline-org">Devbhumi Enterprises</div>
+            <div class="timeline-body">
+              <p>Designed, developed, and tested backend Python modules integrated with frontend UI components in a fast-paced cross-functional team. Re-architected role-based access control (RBAC) workflows, cutting unauthorized misconfigurations by ~50%. Conducted OWASP secure reviews and automated usability tests, achieving full compliance during internal audits.</p>
+            </div>
+          </div>
+
+          <!-- Item 2: UPES Dehradun -->
+          <div class="timeline-item">
+            <div class="timeline-node"></div>
+            <div class="timeline-date">Aug 2023 – Present (Expected 2027)</div>
+            <h3 class="timeline-title">B.Tech in Computer Science & Engineering (Cybersecurity)</h3>
+            <div class="timeline-org">University of Petroleum and Energy Studies (UPES), Dehradun</div>
+            <div class="timeline-body">
+              <p>Maintaining an outstanding <strong>CGPA of 8.71 / 10</strong>. Active contributor to software development clubs, design workshops, and cybersecurity hackathons. Focused on Human-Computer Interaction, systems security, and full-stack engineering.</p>
+            </div>
+          </div>
+
+          <!-- Item 3: 12th CBSE Army Public School -->
+          <div class="timeline-item">
+            <div class="timeline-node"></div>
+            <div class="timeline-date">Graduated 2022</div>
+            <h3 class="timeline-title">Higher Secondary (12th Grade) — 92.6%</h3>
+            <div class="timeline-org">Army Public School, Jhansi (CBSE)</div>
+            <div class="timeline-body">
+              <p>Achieved <strong>92.6%</strong> with academic distinction in Physics, Chemistry, and Mathematics with Computer Science.</p>
+            </div>
+          </div>
+
+          <!-- Item 4: 10th CBSE Army Public School -->
+          <div class="timeline-item">
+            <div class="timeline-node"></div>
+            <div class="timeline-date">Graduated 2020</div>
+            <h3 class="timeline-title">Secondary High School (10th Grade) — 91.2%</h3>
+            <div class="timeline-org">Army Public School, Jhansi (CBSE)</div>
+            <div class="timeline-body">
+              <p>Graduated with <strong>91.2%</strong> aggregate, excelling across analytical, scientific, and communication disciplines.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications & Recognitions Banner -->
+    <section class="section-pad-sm">
+      <div class="container">
+        <div class="card-base" style="padding: var(--space-8);">
+          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-4);">
+            <div>
+              <div class="section-tag" style="margin-bottom: var(--space-2);">Verified Credentials</div>
+              <h3 style="font-size: var(--text-xl); font-weight: 800; color: var(--text-primary);">Industry Certifications & Badges</h3>
+            </div>
+            <div style="display: flex; gap: var(--space-3); flex-wrap: wrap;">
+              <span class="tag-pill" style="border-color: var(--primary-400); color: var(--text-primary);">Cisco: Network Defense & Endpoint Security</span>
+              <span class="tag-pill" style="border-color: var(--accent-cyan); color: var(--text-primary);">Cisco: Modern AI & Python Essentials 1 & 2</span>
+              <span class="tag-pill" style="border-color: var(--accent-emerald); color: var(--text-primary);">TryHackMe: Web Exploitation & System Hardening</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Hire Me Banner -->
+    <section id="contact" class="section-pad">
+      <div class="container">
+        <div class="contact-banner-card">
+          <div class="section-tag" style="background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.2); color: #fff;">Let's Collaborate</div>
+          <h2 style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; color: #fff; margin: var(--space-3) 0 var(--space-4); letter-spacing: -0.03em;">
+            Ready to design something extraordinary together?
+          </h2>
+          <p style="font-size: var(--text-lg); color: var(--primary-100); max-width: 620px; margin: 0 auto; line-height: 1.6;">
+            I am actively interviewing for <strong>UI/UX Designer, Product Designer, and UI Engineering roles</strong> (Full-time & Internships). Feel free to reach out directly:
+          </p>
+
+          <div class="contact-channels-row">
+            <!-- Email One-Click Copy -->
+            <button class="contact-pill-btn copy-trigger-btn" data-copy="kanikasangwan2000@gmail.com" id="btn-copy-email">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>kanikasangwan2000@gmail.com</span>
+              <span style="font-size: 11px; opacity: 0.6; margin-left: 4px;">(Copy)</span>
+            </button>
+
+            <!-- Phone One-Click Copy -->
+            <button class="contact-pill-btn copy-trigger-btn" data-copy="+91 8881458243" id="btn-copy-phone">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>+91 8881458243</span>
+              <span style="font-size: 11px; opacity: 0.6; margin-left: 4px;">(Copy)</span>
+            </button>
+
+            <!-- Send Message Drawer Trigger -->
+            <button class="btn btn-primary btn-open-contact-modal" id="btn-open-message-form">
+              <span>Send Message</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+
+            <!-- Download Resume Trigger -->
+            <button class="btn btn-secondary btn-open-resume-modal" id="btn-open-resume-footer">
+              <span>View / Download Resume</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-content">
+      <div>
+        <div style="font-weight: 700; color: var(--text-primary); font-size: var(--text-base);">Kanika Sangwan</div>
+        <div style="font-size: var(--text-xs); color: var(--text-muted); margin-top: 2px;">UI/UX Designer & Product Engineer • Dehradun / Delhi NCR, India</div>
+      </div>
+
+      <div style="display: flex; align-items: center; gap: var(--space-4);">
+        <a href="#hero" class="nav-item-link" style="font-size: var(--text-xs);">Back to top ↑</a>
+        <span style="color: var(--border-medium);">|</span>
+        <button class="btn-ghost btn-open-resume-modal" style="font-size: var(--text-xs); cursor: pointer; border: none; background: transparent; color: var(--text-secondary);">Curriculum Vitae</button>
+      </div>
+
+      <div style="font-size: var(--text-xs); color: var(--text-muted);">
+        Crafted with strict WCAG AA contrast & 8pt spatial grid rhythm. © 2026.
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MODAL 1: MEETME HARDWARE TEST INTERACTIVE SIMULATOR
+       ========================================================================== -->
+  <div class="modal-backdrop" id="modal-hardware-test" role="dialog" aria-modal="true" aria-labelledby="hardware-modal-title">
+    <div class="modal-box">
+      <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+      
+      <div class="section-tag" style="margin-bottom: 8px;">Interactive Prototype Sandbox</div>
+      <h3 id="hardware-modal-title" style="font-size: var(--text-2xl); font-weight: 800; color: var(--text-primary); margin-bottom: 6px;">MeetMe — Pre-Flight Hardware Check</h3>
+      <p style="font-size: var(--text-sm); color: var(--text-secondary); margin-bottom: var(--space-4);">
+        This interactive widget demonstrates how MeetMe audits microphone decibels, video feeds, and GPU background blur before a user ever enters a live meeting.
+      </p>
+
+      <div class="hardware-test-screen">
+        <!-- Camera Simulator Surface -->
+        <div class="camera-preview-sim">
+          <img src="assets/meetme-showcase.jpg" alt="Video stream simulation" id="cam-sim-video" style="width: 100%; height: 100%; object-fit: cover; transition: all 0.25s ease;">
+          <div style="position: absolute; bottom: 12px; left: 16px; background: rgba(0,0,0,0.6); padding: 4px 10px; border-radius: 4px; font-size: 11px; font-family: monospace;">
+            FEED: 1080p @ 60fps (Hardware Accelerated)
+          </div>
+        </div>
+
+        <!-- VU Meter -->
+        <div style="margin-top: var(--space-4);">
+          <div style="display: flex; justify-content: space-between; font-size: 11px; margin-bottom: 4px;">
+            <span>Microphone Sensitivity: Built-in Array</span>
+            <span style="color: var(--accent-emerald);">Signal Stable (48 kHz)</span>
+          </div>
+          <div class="mic-meter-container">
+            <div class="mic-bar"></div>
+            <div class="mic-bar"></div>
+            <div class="mic-bar"></div>
+            <div class="mic-bar"></div>
+            <div class="mic-bar"></div>
+            <div class="mic-bar"></div>
+            <div class="mic-bar"></div>
+            <div class="mic-bar"></div>
+            <div class="mic-bar"></div>
+            <div class="mic-bar"></div>
+            <div class="mic-bar"></div>
+            <div class="mic-bar"></div>
+            <div class="mic-bar"></div>
+            <div class="mic-bar"></div>
+            <div class="mic-bar"></div>
+            <div class="mic-bar"></div>
+          </div>
+        </div>
+
+        <!-- Controls Row -->
+        <div style="display: flex; gap: var(--space-3); flex-wrap: wrap; margin-top: var(--space-6);">
+          <button class="btn btn-secondary btn-sm" id="btn-test-mic">
+            <span>🎙️ Mic: ON</span>
+          </button>
+          <button class="btn btn-secondary btn-sm" id="btn-test-cam">
+            <span>📹 Camera: ON</span>
+          </button>
+          <button class="btn btn-secondary btn-sm" id="btn-test-blur">
+            <span>✨ Background Blur: OFF</span>
+          </button>
+          <button class="btn btn-secondary btn-sm" id="btn-test-audio-out">
+            <span>🔊 Test Speaker Chime</span>
+          </button>
+        </div>
+      </div>
+
+      <div style="display: flex; justify-content: flex-end; margin-top: var(--space-6); gap: var(--space-3);">
+        <button class="btn btn-primary modal-close-btn" style="position: static; border-radius: var(--radius-full); width: auto; height: auto; padding: var(--space-3) var(--space-6);">
+          Join Meeting Room →
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MODAL 2: CASE STUDY DEEP DIVE MODAL
+       ========================================================================== -->
+  <div class="modal-backdrop" id="modal-case-study" role="dialog" aria-modal="true" aria-labelledby="cs-modal-title">
+    <div class="modal-box">
+      <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+      <div class="section-tag" style="margin-bottom: 8px;">Design Case Study Breakdown</div>
+      <h3 id="cs-modal-title" style="font-size: var(--text-2xl); font-weight: 800; color: var(--text-primary); margin-bottom: var(--space-4);">Case Study Details</h3>
+      <div id="cs-modal-body">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MODAL 3: INTERACTIVE RESUME & CV MODAL
+       ========================================================================== -->
+  <div class="modal-backdrop" id="modal-resume" role="dialog" aria-modal="true" aria-labelledby="resume-modal-title">
+    <div class="modal-box" style="max-width: 860px;">
+      <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+      
+      <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-subtle); padding-bottom: var(--space-4); margin-bottom: var(--space-6);">
+        <div>
+          <h3 id="resume-modal-title" style="font-size: var(--text-2xl); font-weight: 800; color: var(--text-primary);">Kanika Sangwan — Curriculum Vitae</h3>
+          <div style="font-size: var(--text-xs); color: var(--text-secondary); margin-top: 2px;">UI/UX Designer & Frontend Product Engineer</div>
+        </div>
+
+        <button class="btn btn-primary btn-sm" onclick="window.print();" id="btn-print-resume">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+          <span>Print / Save as PDF</span>
+        </button>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: var(--space-6); font-size: var(--text-sm); line-height: 1.65; color: var(--text-secondary);">
+        
+        <!-- Summary Block -->
+        <div>
+          <h4 style="color: var(--text-primary); font-weight: 700; text-transform: uppercase; font-size: var(--text-xs); letter-spacing: 0.08em; margin-bottom: 6px;">Professional Profile</h4>
+          <p>
+            Computer Science undergraduate (B.Tech, UPES Dehradun, <strong>8.71 CGPA</strong>) specializing in UI/UX Design, Human-Computer Interaction, and Full-Stack Frontend Engineering. Combines user empathy, wireframing, and Figma prototyping with hands-on proficiency in React, Next.js 15, TypeScript, Python, and WCAG AA accessibility compliance.
+          </p>
+        </div>
+
+        <!-- Contact details -->
+        <div style="background: var(--bg-surface-elevated); padding: 12px; border-radius: 8px; display: flex; flex-wrap: wrap; gap: 16px; font-size: 13px;">
+          <span>📞 +91 8881458243</span>
+          <span>✉️ kanikasangwan2000@gmail.com</span>
+          <span>📍 Dehradun / Delhi NCR, India</span>
+          <span>🎓 UPES Dehradun (2023–Present)</span>
+        </div>
+
+        <!-- Education Table -->
+        <div>
+          <h4 style="color: var(--text-primary); font-weight: 700; text-transform: uppercase; font-size: var(--text-xs); letter-spacing: 0.08em; margin-bottom: 8px;">Education</h4>
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-subtle); padding-bottom: 6px;">
+              <div><strong>B.Tech in Computer Science & Engineering</strong> — UPES, Dehradun</div>
+              <div style="font-weight: 700; color: var(--primary-400);">CGPA: 8.71 / 10 (2023–Present)</div>
+            </div>
+            <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-subtle); padding-bottom: 6px;">
+              <div><strong>Higher Secondary (12th CBSE)</strong> — Army Public School, Jhansi</div>
+              <div style="font-weight: 700; color: var(--accent-cyan);">92.6% (2022)</div>
+            </div>
+            <div style="display: flex; justify-content: space-between;">
+              <div><strong>High School (10th CBSE)</strong> — Army Public School, Jhansi</div>
+              <div style="font-weight: 700; color: var(--accent-emerald);">91.2% (2020)</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Internships -->
+        <div>
+          <h4 style="color: var(--text-primary); font-weight: 700; text-transform: uppercase; font-size: var(--text-xs); letter-spacing: 0.08em; margin-bottom: 8px;">Experience</h4>
+          <div>
+            <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
+              <strong>Software Intern — Devbhumi Enterprises</strong>
+              <span style="font-family: var(--font-mono); font-size: 12px;">Jun 2025 – Jul 2025</span>
+            </div>
+            <ul style="padding-left: 20px; line-height: 1.6;">
+              <li>Designed and shipped full-stack web application modules in Python and React.</li>
+              <li>Engineered Role-Based Access Control (RBAC) screens, reducing unauthorized access incidents by ~50%.</li>
+              <li>Conducted OWASP-based secure code reviews, accessibility audits, and automated functional tests.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Projects -->
+        <div>
+          <h4 style="color: var(--text-primary); font-weight: 700; text-transform: uppercase; font-size: var(--text-xs); letter-spacing: 0.08em; margin-bottom: 8px;">Key Projects</h4>
+          
+          <div style="margin-bottom: 12px;">
+            <div style="display: flex; justify-content: space-between;">
+              <strong>MeetMe — Full-Stack Video Conferencing Platform</strong>
+              <span style="font-family: var(--font-mono); font-size: 12px;">Next.js 15, TypeScript, FastAPI</span>
+            </div>
+            <p style="font-size: 13px; margin-top: 2px;">Pre-join hardware check screen, HTML5 MediaStream API integration, 8 REST endpoints, timezone normalization, and host moderation UX.</p>
+          </div>
+
+          <div>
+            <div style="display: flex; justify-content: space-between;">
+              <strong>ReachInbox — Distributed Job Scheduler & Telemetry UI</strong>
+              <span style="font-family: var(--font-mono); font-size: 12px;">React, Node.js, Redis, BullMQ</span>
+            </div>
+            <p style="font-size: 13px; margin-top: 2px;">Batch email processing without cron, real-time queue telemetry dashboard, CSV/TXT data parser with duplicate detection, Elasticsearch search.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MODAL 4: CONTACT & INQUIRY FORM DRAWER
+       ========================================================================== -->
+  <div class="modal-backdrop" id="modal-contact" role="dialog" aria-modal="true" aria-labelledby="contact-modal-title">
+    <div class="modal-box" style="max-width: 580px;">
+      <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+
+      <div class="section-tag" style="margin-bottom: 8px;">Direct Connection</div>
+      <h3 id="contact-modal-title" style="font-size: var(--text-2xl); font-weight: 800; color: var(--text-primary); margin-bottom: var(--space-2);">Get In Touch with Kanika</h3>
+      <p style="font-size: var(--text-sm); color: var(--text-secondary); margin-bottom: var(--space-6);">
+        Drop a message regarding full-time opportunities, design consultations, or project collaborations.
+      </p>
+
+      <form id="portfolio-contact-form" style="display: flex; flex-direction: column; gap: var(--space-4);">
+        <div>
+          <label for="contact-name" style="display: block; font-size: var(--text-xs); font-weight: 700; color: var(--text-primary); margin-bottom: 6px;">Your Name *</label>
+          <input type="text" id="contact-name" required placeholder="e.g. Sarah Jenkins (Design Director)" style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid var(--border-medium); background: var(--bg-surface-elevated); color: var(--text-primary); font-family: inherit; font-size: var(--text-sm);">
+        </div>
+
+        <div>
+          <label for="contact-email" style="display: block; font-size: var(--text-xs); font-weight: 700; color: var(--text-primary); margin-bottom: 6px;">Your Email *</label>
+          <input type="email" id="contact-email" required placeholder="name@company.com" style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid var(--border-medium); background: var(--bg-surface-elevated); color: var(--text-primary); font-family: inherit; font-size: var(--text-sm);">
+        </div>
+
+        <div>
+          <label for="contact-message" style="display: block; font-size: var(--text-xs); font-weight: 700; color: var(--text-primary); margin-bottom: 6px;">Message or Project Scope *</label>
+          <textarea id="contact-message" required rows="4" placeholder="Hello Kanika, we are impressed by your UI/UX portfolio and would like to discuss..." style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid var(--border-medium); background: var(--bg-surface-elevated); color: var(--text-primary); font-family: inherit; font-size: var(--text-sm); resize: vertical;"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="margin-top: 8px;">
+          <span>Send Message</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="app-toast" class="toast-notice" role="status" aria-live="polite"></div>
+
+  <!-- Script Modules -->
+  <script src="js/audio.js"></script>
+  <script src="js/sandbox.js"></script>
+  <script src="js/telemetry.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
