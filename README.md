@@ -1,4 +1,4 @@
-# Kanika Sangwan — UI/UX Designer & Frontend Product Engineer
+# Kanika  — UI/UX Designer & Frontend Product Engineer
 
 A modern, accessible, and high-performance portfolio website showcasing UI/UX case studies, design systems, interactive prototypes, and production engineering.
 
